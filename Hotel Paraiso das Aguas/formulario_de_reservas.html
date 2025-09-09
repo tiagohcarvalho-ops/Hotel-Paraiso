@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Serviços e Valores</title>
+    </head>
+
+    <body>
+      <h2 style="text-align:center; margin-top:30px;">📑 Formulário de Reserva</h2>
+
+<form action="reserva.php" method="post" style="max-width: 500px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <label for="nome">Nome completo:</label><br>
+  <input type="text" id="nome" name="nome" required style="width:100%; padding:8px; margin:6px 0;"><br>
+
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin:6px 0;"><br>
+
+  <label for="telefone">Telefone:</label><br>
+  <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required style="width:100%; padding:8px; margin:6px 0;"><br>
+
+  <label for="checkin">Data de Check-in:</label><br>
+  <input type="date" id="checkin" name="checkin" required style="width:100%; padding:8px; margin:6px 0;"><br>
+
+  <label for="checkout">Data de Check-out:</label><br>
+  <input type="date" id="checkout" name="checkout" required style="width:100%; padding:8px; margin:6px 0;"><br>
+
+  <label for="quarto">Tipo de Quarto:</label><br>
+  <select id="quarto" name="quarto" required style="width:100%; padding:8px; margin:6px 0;">
+    <option value="standard">Standard</option>
+    <option value="luxo">Luxo</option>
+    <option value="suite">Suíte Master</option>
+  </select><br>
+
+  <label for="observacoes">Observações:</label><br>
+  <textarea id="observacoes" name="observacoes" rows="4" style="width:100%; padding:8px; margin:6px 0;"></textarea><br>
+
+  <button type="submit" style="width:100%; background:#0077cc; color:white; padding:12px; font-size:16px; border:none; border-radius:6px; cursor:pointer; transition: background 0.3s, transform 0.3s;">
+    Enviar Reserva
+  </button>
+</form>
+
+<style>
+  form button:hover {
+    background: #005fa3;
+    transform: scale(1.05);
+  }
+   </style>
+ </body>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Serviços e Valores</title>
+          <style>
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+           </style>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;">🏨 Tabela de Quartos e Preços</h2>
+      <hr>
+<table border="1" cellspacing="0" cellpadding="10" style="width:80%; margin: 0 auto; border-collapse: collapse; text-align: center; font-family: Arial, sans-serif;">
+  <thead style="background-color: #0077cc; color: white;">
+    <tr>
+      <th>Tipo de Quarto</th>
+      <th>Preço por Noite</th>
+      <th>Serviços Inclusos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Standard</td>
+      <td>R$ 250,00</td>
+      <td>Café da manhã, Wi-Fi, Estacionamento</td>
+    </tr>
+    <tr>
+      <td>Luxo</td>
+      <td>R$ 400,00</td>
+      <td>Café da manhã, Wi-Fi, Estacionamento, Piscina</td>
+    </tr>
+    <tr>
+      <td>Suíte Master</td>
+      <td>R$ 650,00</td>
+      <td>Café da manhã, Wi-Fi, Estacionamento, Piscina, Spa Exclusivo</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="galeria">
+<div class="card">
+  <img src="quarto_stand.jpg" alt="Quarto Standard">
+  <a href="formulario_de_reservas.html" class="btn">Reservar quarto Standard</a>
+</div>
+
+<div class="card">
+  <img src="quarto_de_luxo.jpg" alt="Quarto Luxo">
+  <a href="formulario_de_reservas.html" class="btn">Reservar quarto de Luxo</a>
+</div>
+
+<div class="card">
+  <img src="suite_master.avif" alt="Suíte Master">
+  <a href="formulario_de_reservas.html" class="btn">Reservar Suíte Master</a>
+</div>
+  
+  </div>
+</div>
+</div>
+
+<style>
+  .quartos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  }
+
+  .btn {
+    background-color: #005fa3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.1);
+  }
+</style>
+    </body>
+</html>
