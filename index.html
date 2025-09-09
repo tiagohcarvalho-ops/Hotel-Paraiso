@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hotel Paraiso das Águas</title>
+        
+<!--HTML + CSS usando flexbox e o efeito de hover com transform.-->
+          <style>
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+           </style>
+    </head>
+
+  <body>
+<!--usei o style para centralizar os textos na pagina-->
+      <h1 style="text-align: center;">Hotel Paraíso das Águas</h1>
+    <hr>
+    <section>
+     <p> Bem-vindo ao Hotel Paraíso das Águas 
+Localizado em uma das regiões turísticas mais famosas de Santa Catarina, nosso resort oferece conforto, lazer e experiências inesquecíveis para toda a família. Cercado por paisagens naturais encantadoras, combinamos hospitalidade de excelência com infraestrutura moderna.</p>
+  <div class="galeria">
+    <img src="piscina_hotel.jpg" alt="Piscina do hotel">
+    <img src="quarto_hotel.jpg" alt="Quarto de luxo">
+    <img src="praia_hotel.jpg" alt="Vista da praia">
+    <img src="restalrante_hotel.jpg" alt="Área de lazer">
+  </div>
+
+<h2>Aqui você encontra:</h2>
+ <ul><
+<li>- Acomodações aconchegantes e equipadas</li>
+<li>- Piscinas e áreas de lazer para todas as idades</li>
+<li>- Gastronomia variada com sabores regionais e internacionais</li>
+<li>- Atividades de entretenimento e contato com a natureza</li>
+ </ul>
+ </section>
+
+<h3 style="text-align: center;"> Seja para descansar, se divertir ou viver momentos especiais, o Hotel Paraíso das Águas é o destino perfeito para suas férias.</h3>
+ </ul>
+    </section>
+    <div style="text-align: center;">
+     <video width="70%" height="400" controls autoplay loop muted>
+        <source src="video_projeto.mp4" alt="video promocional" type="video/mp4">
+     </video>
+    </div>
+    
+   <h2 style="text-align: center;">Não perca nem mais um segundo e venha viver esse sonho!</h2>
+<div style="text-align: center;">
+  <a href="valores_e_serviços.html" class="btn">Quero viver esse sonho!</a>
+</div>
+
+<style>
+.btn {
+  display: inline-block;
+  background: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+</style>
+  </body>
+</html>
